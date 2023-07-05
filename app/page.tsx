@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to my app</h1>
+      <h1>{`Welcome to my app`}</h1>
       <MyButton />
     </div>
   );
@@ -19,6 +19,6 @@ function MyButton() {
 
   return (
     <button type="button" onClick={() => router.push('/dashboard')}>
-      I'm a button</button>
+      {`I'm a button`}</button>
   );
 }
